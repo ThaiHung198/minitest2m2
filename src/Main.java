@@ -10,17 +10,16 @@ public class Main {
         };
 
         System.out.println("DANH SÁCH SẢN PHẨM");
-        System.out.println("Kho hàng: "+ Product.getStoreName());
+        System.out.println("Kho hàng: " + Product.getStoreName());
         System.out.println("------------------------------------");
         for (Product p : products) {
             p.display();
         }
 
         System.out.println("\nTHỐNG KÊ KHO HÀNG");
-        System.out.println("Tổng số sản phẩm: "+Product.getTotalProduct());
-        System.out.println("Tổng giá trị tồn kho: "+ Product.formatCurrency(Product.getTotalInventoryValue()) + " VND");
-        System.out.println("Giá trung bình: "+ Product.formatCurrency(Product.getAveragePrice()) + " VND");
-
+        System.out.println("Tổng số sản phẩm: " + Product.getTotalProduct());
+        System.out.println("Tổng giá trị tồn kho: " + Product.formatCurrency(Product.getTotalInventoryValue()) + " VND");
+        System.out.println("Giá trung bình: " + Product.formatCurrency(Product.getAveragePrice()) + " VND");
 
 
         Product.setStoreName("Kho Tổng ABC");

@@ -5,9 +5,9 @@ public class Product {
     private String name;
     private double price;
     private int quantity;
-    private static String storeName ="Kho Tổng ABC";
-    private static int totalProduct=0;
-    private static double totalInventoryValue=0;
+    private static String storeName = "Kho Tổng ABC";
+    private static int totalProduct = 0;
+    private static double totalInventoryValue = 0;
 
     public Product(int id, String name, double price, int quantity) {
         this.id = id;
@@ -23,15 +23,15 @@ public class Product {
         System.out.println("|Tên sản phẩm: " + name + "|");
         System.out.println("|Giá: " + price + "|");
         System.out.println("|Số lượng: " + quantity + "|");
-        System.out.println("|Giá trị tồn kho: "+ getInventoryValue()+"VND");
+        System.out.println("|Giá trị tồn kho: " + getInventoryValue() + "VND");
     }
 
     public double getInventoryValue() {
-        return price*quantity;
+        return price * quantity;
     }
 
     public static double getAveragePrice() {
-        return totalProduct ==0 ?0: totalInventoryValue/totalProduct;
+        return totalProduct == 0 ? 0 : totalInventoryValue / totalProduct;
     }
 
     public static String getStoreName() {
