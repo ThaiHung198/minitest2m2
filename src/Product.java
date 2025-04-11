@@ -55,7 +55,6 @@ public class Product {
         return formatter.format(amount);
     }
 
-    // Getter methods for instance variables
     public int getId() {
         return id;
     }
